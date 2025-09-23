@@ -63,12 +63,20 @@ You can use this repository in two ways:
    - Review each flashcard directly in the GitHub repo.
 
 2. **Run Locally**  
-   - Clone the repository and execute snippets as you study:
+   - Clone the repository and set up the environment with [uv](https://docs.astral.sh/uv/):
      ```bash
      git clone https://github.com/<your-username>/<repo-name>.git
      cd <repo-name>
-     python 01_PauliOperators.py
+     uv sync
      ```
+   - Run any snippet inside the project environment:
+     ```bash
+     uv run snippets/2_Visualization/2.2_States/2.2.4_Plot_State_City_and_PauliVec.py
+     ```
+
+   > `uv sync` installs all dependencies from `pyproject.toml` into a local `.venv`,  
+   > and `uv run` ensures the snippet runs in that environment without manual activation.
+
 
 ---
 
