@@ -1,6 +1,6 @@
 # Qiskit v2.X Certification Study Flashcodes
 
-This repository is a collection of **Qiskit code-snippet flashcards** designed to study for the **IBM Quantum Qiskit v2.X Certification Exam**.  
+This repository is a collection of **Qiskit code-snippet flashcards** derived from the documentation, designed for studying for the **IBM Quantum Qiskit v2.X Certification Exam**.  
 Each folder explores one topic from the official exam guide in a **minimal, runnable example**.
 
 ---
@@ -10,9 +10,17 @@ Each folder explores one topic from the official exam guide in a **minimal, runn
 I created this project because I wanted a **complete set of learning material grounded in actual, concrete code examples** — not just documentation.  
 
 Key goals:  
-- Provide **self-contained snippets** that can run independently of the actual IBM Quantum hardware, making them really easy to revisit repeatedly.  
+- Provide **self-contained snippets** that can run independently of the actual IBM Quantum hardware, making them easy to revisit repeatedly.  
 - Ensure that for every exam topic, there is a **direct, runnable example** that demonstrates the concept in practice.  
-- Build a **comprehensive study resource** so that i know: "if I can read, understand, and run all of these flashcards, I can be confident I have the knowledge required to pass the certification."  
+- Build a **comprehensive study resource** so that I know: *"if I can read, understand, and run all of these flashcards, I can be confident I have the knowledge required to pass the certification."*  
+
+⚠️ **Important note:**  
+This repository is **not a 100% complete study resource** on its own.  
+While it does cover every topic in the study guide, its main strength is helping you **read and understand Qiskit code** through concrete examples.
+
+It may not fully prepare you to **write Qiskit code from scratch** without additional study, practice, and reference to the official documentation.
+
+Additionally there may be errors - if you find something incorrect or that does not make sense, please verify the error it and submit a PR.
 
 ---
 
