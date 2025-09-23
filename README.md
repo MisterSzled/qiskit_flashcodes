@@ -33,7 +33,7 @@ Key goals:
 
 ## 🧩 Exam Guide Coverage
 
-The flashcards are organized according to the exam guide:
+The flashcards are organized according to the exam guide (https://github.com/qiskit-advocate/qiskit-advocate-library/blob/main/advocate-resources/qiskit-cert-study-resources/QAP_Qiskit_exam_syllabus.pdf):
 
 - **Perform quantum operations**
   - Define Pauli operators
