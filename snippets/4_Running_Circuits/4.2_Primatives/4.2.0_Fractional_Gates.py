@@ -15,8 +15,8 @@ print(">>> Fractional gate backend selected:", fractional_backend.name)
 SUMMARY:
 - Shows how to request a backend with fractional gate support.
 - Steps:
-    1. Import QiskitRuntimeService.
-    2. Initialize the service (uses stored IBM Quantum credentials).
-    3. Call least_busy() with use_fractional_gates=True.
-    4. Print the selected backend name.
+        1. Import QiskitRuntimeService.
+        2. Initialize the service (uses stored IBM Quantum credentials).
+        3. Call least_busy() with use_fractional_gates=True.
+        4. Print the selected backend name.
 """
