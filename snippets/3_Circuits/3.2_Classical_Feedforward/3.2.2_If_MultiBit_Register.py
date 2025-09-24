@@ -18,7 +18,7 @@ circuit.measure(q1, c1)
 
 print("Step 3: If classical register == 0b001, apply X on q2.")
 with circuit.if_test((clbits, 0b001)):  # condition: c2=1, c1=0, c0=0
-    circuit.x(q2)
+        circuit.x(q2)
 
 print("Step 4: Measure q2 into c2.")
 circuit.measure(q2, c2)

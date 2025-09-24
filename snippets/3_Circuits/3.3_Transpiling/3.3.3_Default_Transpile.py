@@ -21,6 +21,6 @@ SUMMARY:
 - Shows quick transpile() function with optimization_level flag.
 - Steps executed:
         1. Create 2-qubit circuit (H + CNOTs).
-        2. Transpile with levels 0–3.
+        2. Transpile with levels 0-3.
         3. Print differences in optimized results.
 """

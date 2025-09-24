@@ -17,9 +17,9 @@ circuit.measure(q0, c0)
 
 print("Step 3: Conditional operation on q1.")
 with circuit.if_test((c0, 1)) as else_:  # if c0 == 1
-    circuit.h(q1)  # apply H
+        circuit.h(q1)  # apply H
 with else_:  # else branch (if c0 != 1)
-    circuit.x(q1)  # apply X
+        circuit.x(q1)  # apply X
 
 print("Step 4: Measure q1 into c1.")
 circuit.measure(q1, c1)

@@ -17,7 +17,7 @@ circuit.measure(q0, c0)  # collapse to 0 or 1
 
 print("Step 3: If measurement == 1, apply X to flip back to |0>.")
 with circuit.if_test((c0, 1)):  # condition: if c0 == 1
-    circuit.x(q0)
+        circuit.x(q0)
 
 print("Step 4: Measure again to confirm qubit is reset to |0>.")
 circuit.measure(q0, c0)

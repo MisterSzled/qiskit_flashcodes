@@ -10,7 +10,7 @@ print(qc.data)  # List of CircuitInstruction objects
 
 """
 Summary:
-- Shows how adding gates modifies a circuit’s `data` attribute.
+- Shows how adding gates modifies a circuits `data` attribute.
 - Steps:
         1. Create 2-qubit circuit.
         2. Check empty data list.

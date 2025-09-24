@@ -15,8 +15,8 @@ print("Expansion (B ⊗ A):\n", expand_ab.data, "\n")
 
 """
 SUMMARY:
-- Shows difference between tensor() and expand():
-  * tensor: places right-hand operator on lower subsystem (A ⊗ B).
-  * expand: reverses order (B ⊗ A).
-- Both combine single-qubit operators into 2-qubit systems.
+        - Shows difference between tensor() and expand():
+                * tensor: places right-hand operator on lower subsystem (A ⊗ B).
+                * expand: reverses order (B ⊗ A).
+        - Both combine single-qubit operators into 2-qubit systems.
 """

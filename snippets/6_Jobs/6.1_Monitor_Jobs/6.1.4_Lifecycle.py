@@ -42,9 +42,9 @@ except Exception:
 
 """
 SUMMARY:
-- Submit → job = sampler.run([...]).
-- Monitor → job.status(), job.result().
-- Inspect execution spans → result.metadata["execution"]["execution_spans"].
-- Filter results via BitArray + mask.
-- Cancel → job.cancel() (if still active).
+        - Submit → job = sampler.run([...]).
+        - Monitor → job.status(), job.result().
+        - Inspect execution spans → result.metadata["execution"]["execution_spans"].
+        - Filter results via BitArray + mask.
+        - Cancel → job.cancel() (if still active).
 """
