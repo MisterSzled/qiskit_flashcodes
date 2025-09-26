@@ -6,13 +6,29 @@ from qiskit.quantum_info.operators import Operator
 
 # ===== Basic Example: 1-qubit to 1-qubit (square matrix) =====
 # A 1-qubit operator is a 2x2 square matrix
-basic_op_matrix = np.array([[0, 1],
-                        [1, 0]])  # Pauli-X gate
+basic_op_matrix = np.array([[0, 1], [1, 0]])  # Pauli-X gate
 op_basic = Operator(basic_op_matrix)
 print("Basic 1-qubit operator (Pauli-X):")
 print(op_basic)
 print("Input dimensions:", op_basic.input_dims())   # [2] → 1 qubit
 print("Output dimensions:", op_basic.output_dims()) # [2] → 1 qubit
+print()
+
+# ===== Simple Example: 3 subsystems to 1 subsystem (8d-qudit) =====
+# This is saying 'this is a 3-qubit operator, each of dimension 2
+simple_op = Operator(np.eye(2**3)) #(2,2,2)
+print("Basic 3-qubit operator (Identity):")
+print(simple_op)
+print("Input dimensions:", simple_op.input_dims())   # [3] → 3 qubit
+print("Output dimensions:", simple_op.output_dims()) # [3] → 3 qubit
+print()
+# This is manually asserting the input is now a single 8d input.
+# Note the output remains assumed to be 3 qubits (2,2,2)
+simple_op = Operator(np.eye(8), input_dims=[8])
+print("8d qudit operator (same as 3-qubit but expecting an 8d input) (Identity):")
+print(simple_op)
+print("Input dimensions:", simple_op.input_dims())   # (8,)
+print("Output dimensions:", simple_op.output_dims()) # (2,2,2)
 print()
 
 # ===== Example: 1-qubit input, 2-qubit output (rectangular) =====

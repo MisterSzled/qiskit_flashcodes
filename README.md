@@ -1,6 +1,6 @@
 # Qiskit v2.X Certification Study Flashcodes
 
-This repository is a collection of **Qiskit code-snippet flashcards** derived from the documentation, designed for studying for the **IBM Quantum Qiskit v2.X Certification Exam**.  
+This repository is a collection of **Qiskit code-snippet flashcards** derived directly from the documentation, designed for studying for the **IBM Quantum Qiskit v2.X Certification Exam**.  
 Each folder explores one topic from the official exam guide in a **minimal, runnable example**.
 
 ---
