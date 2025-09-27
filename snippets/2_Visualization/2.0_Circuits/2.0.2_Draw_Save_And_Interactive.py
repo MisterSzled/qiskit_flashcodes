@@ -12,7 +12,7 @@ circuit.draw(output="mpl", filename="circuit.png")
 print("Circuit diagram saved as circuit.png (matplotlib).")
 
 # Save as LaTeX image
-circuit.draw(output="latex", filename="circuit_latex.png")
+# circuit.draw(output="latex", filename="circuit_latex.png")
 print("Circuit diagram saved as circuit_latex.png (LaTeX).")
 
 # Interactive window (may not work in all environments)

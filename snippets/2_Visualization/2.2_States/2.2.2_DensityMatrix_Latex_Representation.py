@@ -17,9 +17,9 @@ psi = Statevector(qc)
 rho = DensityMatrix(psi)
 print("[INFO] Converted Statevector to DensityMatrix.")
 
-# Step 2: Draw density matrix as LaTeX
-latex_matrix = rho.draw("latex")
-print("[RESULT] LaTeX matrix representation:\n", latex_matrix)
+# Step 2: Draw density matrix as Text - Latex doesn't format nicely on the terminal
+latex_matrix = rho.draw("text")
+print("[RESULT] Text matrix representation:\n", latex_matrix)
 
 """
 SUMMARY:
@@ -27,5 +27,6 @@ SUMMARY:
 - Steps:
         1. Build a 2-qubit circuit and create a Statevector.
         2. Convert the statevector into a density matrix with `DensityMatrix(psi)`.
-        3. Use `.draw("latex")` for matrix-style LaTeX output.
+        3a. Use `.draw("text")` for matrix-style text output.
+        3b. Use `.draw("latex")` for matrix-style LaTeX output.
 """

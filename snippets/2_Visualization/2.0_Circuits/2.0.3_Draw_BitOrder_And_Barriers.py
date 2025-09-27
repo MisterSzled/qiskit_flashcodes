@@ -26,7 +26,7 @@ print(circuit.draw(output="text", reverse_bits=True))
 
 print("\nWithout barriers:")
 print(circuit.draw(output="text", plot_barriers=False))
-
+circuit.draw(output="mpl", filename="circuit.png")
 """
 SUMMARY:
 - Demonstrates bit order reversal and barrier control in circuit diagrams.
