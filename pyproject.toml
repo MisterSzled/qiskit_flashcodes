@@ -9,4 +9,5 @@ dependencies = [
     "qiskit-ibm-runtime>=0.41.1",
     "qiskit-aer>=0.17.2",
     "ipython>=9.5.0",
+    "qiskit-qasm3-import>=0.6.0",
 ]

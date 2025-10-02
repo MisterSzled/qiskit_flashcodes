@@ -11,6 +11,8 @@ big_qc.append(inst, [0, 1])
 
 # Decompose to see underlying structure
 decomposed = big_qc.decompose()
+print("Raw circuit:")
+print(big_qc)
 print("Decomposed circuit:")
 print(decomposed)
 

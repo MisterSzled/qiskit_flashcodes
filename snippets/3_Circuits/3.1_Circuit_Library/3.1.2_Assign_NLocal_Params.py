@@ -1,6 +1,6 @@
-from qiskit.circuit.library import NLocal
+from qiskit.circuit.library.n_local import n_local
 
-two_local = NLocal(3, "rx", "cz")
+two_local = n_local(3, rotation_blocks="rx", entanglement_blocks="cz")
 
 # Assign all parameters to 0
 bound_circuit = two_local.assign_parameters(

@@ -11,7 +11,7 @@ encoded = feature_map.assign_parameters(features)
 
 print("Feature-encoded circuit with ZZFeatureMap:")
 print(encoded)
-
+print(encoded.decompose())
 """
 Summary:
 - Demonstrates angle encoding using ZZFeatureMap.

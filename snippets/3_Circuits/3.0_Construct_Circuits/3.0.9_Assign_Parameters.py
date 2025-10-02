@@ -1,7 +1,9 @@
 from qiskit.circuit import Parameter
 from qiskit import QuantumCircuit
 
+# Define paramater called 'angle'
 angle = Parameter("angle")
+
 qc = QuantumCircuit(1)
 qc.rx(angle, 0)
 
@@ -9,7 +11,7 @@ qc.rx(angle, 0)
 circuits = [qc.assign_parameters({angle: v}) for v in range(3)]
 
 for idx, c in enumerate(circuits):
-        print(f"Circuit with angle={idx}:")
+        print(f"Circuit with angle = {idx}:")
         print(c)
 
 """

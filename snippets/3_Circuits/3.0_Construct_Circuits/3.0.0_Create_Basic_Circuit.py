@@ -7,6 +7,8 @@ qc = QuantumCircuit(2)  # Create a circuit with 2 qubits
 print("Qubit register objects in the circuit:")
 print(qc.qubits)  # Shows Qubit objects and their indices
 
+
+print(qc)
 """
 Summary:
 - Demonstrates creating a basic QuantumCircuit with 2 qubits.

@@ -3,10 +3,21 @@
 from qiskit import QuantumCircuit, transpile
 from qiskit.quantum_info import SparsePauliOp
 from qiskit_ibm_runtime import QiskitRuntimeService, EstimatorV2
+from qiskit_aer import AerSimulator
 
-service = QiskitRuntimeService(channel="ibm_quantum")
-backend = service.least_busy(simulator=False)
-print("Selected backend:", backend.name)
+# --- Option flag ---
+USE_AER = True  # Default = True (run locally on Aer). Set to False for IBM Quantum Runtime.
+
+# --- Step 1: Select backend ---
+if USE_AER:
+        backend_name = "AerSimulator"
+        backend = AerSimulator()
+else:
+        service = QiskitRuntimeService(channel="ibm_quantum")
+        backend = service.least_busy(simulator=False)
+        backend_name = backend.name
+
+print("Selected backend:", backend_name)
 
 # Circuit: prepare |+> state
 qc = QuantumCircuit(1)

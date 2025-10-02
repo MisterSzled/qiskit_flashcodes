@@ -17,6 +17,7 @@ state.compose(evolution, inplace=True)
 
 print("State after time evolution under Hamiltonian:")
 print(state)
+print(state.decompose())
 
 """
 Summary:

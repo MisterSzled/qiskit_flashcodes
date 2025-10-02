@@ -1,21 +1,21 @@
-# 5.4.0 PUB Basics
+# 5.3.0 PUB Basics
 # Demonstrates the Primitive Unified Block (PUB) structure.
 
-from qiskit.primitives import Sampler, Estimator
-from qiskit.circuit import QuantumCircuit
+from qiskit import QuantumCircuit
 from qiskit.quantum_info import Pauli
 
-# Build a circuit
+# --- Step 1: Build a circuit ---
 qc = QuantumCircuit(1)
 qc.h(0)
 
-# Observable for Estimator
+# --- Step 2: Define an observable ---
 obs = Pauli("Z")
 
-# PUB for Sampler → just a list of circuits
+# --- Step 3: PUBs are just standardized inputs ---
+# Sampler PUB = [list of circuits]
 pub_sampler = [qc]
 
-# PUB for Estimator → list of (circuit, observable) tuples
+# Estimator PUB = [(circuit, observable)]
 pub_estimator = [(qc, obs)]
 
 print("Sampler PUB:", pub_sampler)
@@ -26,5 +26,6 @@ SUMMARY:
         - PUB = Primitive Unified Block → standardized input format for primitives.
         - Sampler PUB: [circuits]
         - Estimator PUB: [(circuit, observable)]
-        - Ensures consistent, predictable input API.
+        - PUBs are just lists/tuples, ensuring a consistent API for SamplerV2/EstimatorV2.
+        - In Qiskit 2.x+, use SamplerV2 and EstimatorV2 from `qiskit_ibm_runtime`.
 """

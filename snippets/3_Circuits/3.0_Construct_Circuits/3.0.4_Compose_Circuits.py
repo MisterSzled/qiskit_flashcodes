@@ -7,6 +7,12 @@ qc_b = QuantumCircuit(2, name="qc_b")
 qc_b.y(0)
 qc_b.z(1)
 
+print(qc_a);
+print();
+
+print(qc_b);
+print();
+
 # Compose qc_b into qc_a on qubits [1,3]
 combined = qc_a.compose(qc_b, qubits=[1, 3])
 print("Composed circuit (qc_a with qc_b mapped to qubits [1,3]):")

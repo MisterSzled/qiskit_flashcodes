@@ -1,16 +1,28 @@
 # Flashcard 5.1.1 - EstimatorV2 with Parametric Circuit
 
-from qiskit.circuit.library import EfficientSU2
+import qiskit.circuit.library as qlib
 from qiskit.quantum_info import SparsePauliOp
 from qiskit import transpile
 from qiskit_ibm_runtime import QiskitRuntimeService, EstimatorV2
 import numpy as np
+from qiskit_aer import AerSimulator
 
-service = QiskitRuntimeService(channel="ibm_quantum")
-backend = service.least_busy(simulator=False)
+# --- Option flag ---
+USE_AER = True  # Default = True (run locally on Aer). Set to False for IBM Quantum Runtime.
+
+# --- Step 1: Select backend ---
+if USE_AER:
+        backend_name = "AerSimulator"
+        backend = AerSimulator()
+else:
+        service = QiskitRuntimeService(channel="ibm_quantum")
+        backend = service.least_busy(simulator=False)
+        backend_name = backend.name
+
+print("Selected backend:", backend_name)
 
 # Parametric circuit (2 qubits, single layer)
-qc = EfficientSU2(2, reps=1)
+qc = qlib.efficient_su2(2, reps=1)
 
 # Observable: Z⊗Z
 observable = SparsePauliOp.from_list([("ZZ", 1)])

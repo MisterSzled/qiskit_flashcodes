@@ -7,7 +7,7 @@ angle = Parameter("angle")
 qc = QuantumCircuit(1)
 qc.rx(angle, 0)  # Use parameter in RX gate
 
-print("Circuit with undefined parameter:")
+print("Circuit with named but currently undefined parameter:")
 print(qc)
 print("Parameters in circuit:", qc.parameters)
 

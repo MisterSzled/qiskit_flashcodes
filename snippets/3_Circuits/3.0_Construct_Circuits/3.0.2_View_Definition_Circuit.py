@@ -8,6 +8,7 @@ definition_circuit = qc.data[0].operation.definition
 print("Definition circuit for the X gate:")
 print(definition_circuit)
 
+print(qc)
 """
 Summary:
 - Demonstrates retrieving the definition of an instruction.

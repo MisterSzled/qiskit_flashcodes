@@ -8,6 +8,7 @@ qc.x(0)
 print("Circuit data after adding X gate:")
 print(qc.data)  # List of CircuitInstruction objects
 
+print(qc)
 """
 Summary:
 - Shows how adding gates modifies a circuits `data` attribute.
