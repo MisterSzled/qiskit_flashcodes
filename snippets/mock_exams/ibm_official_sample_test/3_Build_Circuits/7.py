@@ -1,22 +1,26 @@
-# 7. Given the code fragment below, which of the following code fragments creates a
-# rotation gate with an angle that has an initially undefined value?
-#
-# from qiskit.circuit import QuantumCircuit, Parameter, ParameterExpression
-# qc = QuantumCircuit(1)
-#
-# a.
-# theta = 3.14
-# qc.rx(3.14, 0)
-#
-# b.
-# theta = Parameter('theta')
-# qc.rx(theta, 0)
-#
-# c.
-# qc.rx('theta', 0)
-#
-# d.
-# qc.rx(ParameterExpression('theta'), 0)
+"""
+
+7. Given the code fragment below, which of the following code fragments creates a
+rotation gate with an angle that has an initially undefined value?
+
+from qiskit.circuit import QuantumCircuit, Parameter, ParameterExpression
+qc = QuantumCircuit(1)
+
+a.
+theta = 3.14
+qc.rx(3.14, 0)
+
+b.
+theta = Parameter('theta')
+qc.rx(theta, 0)
+
+c.
+qc.rx('theta', 0)
+
+d.
+qc.rx(ParameterExpression('theta'), 0)
+
+"""
 
 from qiskit.circuit import QuantumCircuit, Parameter, ParameterExpression
 from qiskit.visualization import circuit_drawer
