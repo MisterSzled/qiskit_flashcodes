@@ -1,7 +1,6 @@
 # 1.0.0 SparsePauliOp Basics
 # Demonstrates how to create SparsePauliOp objects using from_sparse_list.
 
-import numpy as np
 from qiskit.quantum_info.operators import SparsePauliOp
 
 # Create a SparsePauliOp from a list of triplets:

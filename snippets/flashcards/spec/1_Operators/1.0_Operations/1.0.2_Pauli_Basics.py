@@ -13,7 +13,6 @@
 #            Pauli multiplication is then just XOR on bit-vectors 
 #            plus modular addition of the (−i)-phase exponent.
 
-import numpy as np
 from qiskit.quantum_info.operators import Pauli
 
 # Initialize Pauli operator with "iXX"

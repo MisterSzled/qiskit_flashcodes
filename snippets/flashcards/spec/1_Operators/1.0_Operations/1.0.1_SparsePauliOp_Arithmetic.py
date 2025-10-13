@@ -1,7 +1,6 @@
 # 1.0.1 SparsePauliOp Arithmetic
 # Demonstrates supported arithmetic operations on SparsePauliOp objects.
 
-import numpy as np
 from qiskit.quantum_info.operators import SparsePauliOp
 
 # Define two operators with different Pauli terms
