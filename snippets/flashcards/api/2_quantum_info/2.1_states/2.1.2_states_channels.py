@@ -166,7 +166,7 @@ print("Q9 demo Chi matrix shape:", chi.data.shape)
 # Question 10
 What is the `PTM` (Pauli Transfer Matrix) representation?
 
-a. A real matrix representing a channel’s action on Pauli operators.  
+a. A real matrix representing a channel's action on Pauli operators.  
 b. A complex-valued Choi matrix.  
 c. The Stinespring dilation.  
 d. The eigenbasis of the density operator.  

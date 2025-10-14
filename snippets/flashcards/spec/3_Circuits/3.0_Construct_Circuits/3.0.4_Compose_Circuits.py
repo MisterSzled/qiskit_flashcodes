@@ -24,6 +24,6 @@ Summary:
 - Steps:
         1. Create qc_a with 4 qubits.
         2. Create qc_b with 2 qubits.
-        3. Map qc_b’s qubits (0→1, 1→3 of qc_a).
+        3. Map qc_b's qubits (0→1, 1→3 of qc_a).
         4. Produce a new composed circuit.
 """

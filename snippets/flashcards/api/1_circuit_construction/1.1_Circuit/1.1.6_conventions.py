@@ -40,7 +40,7 @@ qc.draw("mpl").savefig("circuit_order.png")
 # ---------------------------------------------------------------
 """
 # Question 3
-Given Qiskit’s statevector convention, what index holds |10011⟩?
+Given Qiskit's statevector convention, what index holds |10011⟩?
 a. 3
 b. 13
 c. 19
@@ -57,7 +57,7 @@ print("Amplitude index for |10011>:", 19, sv[19])
 # ---------------------------------------------------------------
 """
 # Question 4
-In Qiskit’s Kronecker-product ordering, which qubit is placed on the right?
+In Qiskit's Kronecker-product ordering, which qubit is placed on the right?
 a. Highest index
 b. Lowest index
 c. Control qubit only

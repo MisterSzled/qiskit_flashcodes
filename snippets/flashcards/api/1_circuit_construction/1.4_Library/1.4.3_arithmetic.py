@@ -7,7 +7,7 @@ Section: Arithmetic (qiskit.circuit.library.arithmetic)
 # ---------------------------------------------------------------
 """
 # Question 1
-Which statement best describes the purpose of an adder circuit in Qiskit’s arithmetic module?
+Which statement best describes the purpose of an adder circuit in Qiskit's arithmetic module?
 
 a. It performs reversible quantum addition of two n-qubit registers.  
 b. It measures two quantum registers and outputs their classical sum.  
@@ -28,7 +28,7 @@ print(qc.draw())
 # ---------------------------------------------------------------
 """
 # Question 2
-What is the function of the MultiplierGate in Qiskit’s arithmetic library?
+What is the function of the MultiplierGate in Qiskit's arithmetic library?
 
 a. It computes the product of two equally sized qubit registers into a new register.  
 b. It adds the values of two registers modulo 2ⁿ.  

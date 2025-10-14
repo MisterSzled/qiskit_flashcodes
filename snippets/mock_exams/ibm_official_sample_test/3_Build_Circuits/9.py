@@ -53,7 +53,7 @@ print("\nSaved 'q9_original_circuit.png' and 'q9_transpiled_circuit.png'")
 
 """
 SUMMARY:
-        - This snippet demonstrates how Qiskit’s pass manager (with optimization_level=3)
+        - This snippet demonstrates how Qiskit's pass manager (with optimization_level=3)
                 modifies a circuit according to coupling_map and basis_gates constraints.
         - initial_layout remaps logical qubits → physical qubits, potentially introducing SWAPs.
         - The transpiled circuit ('tqc') is drawn and saved for visual inspection.

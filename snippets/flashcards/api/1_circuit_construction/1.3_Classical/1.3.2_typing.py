@@ -28,7 +28,7 @@ print("Created Bool type:", bool_t)
 # ---------------------------------------------------------------
 """
 # Question 2
-Which of the following correctly matches Qiskit’s built-in classical types to their use?
+Which of the following correctly matches Qiskit's built-in classical types to their use?
 
 a. Bool → classical bit values; Uint → unsigned integers; Float → real numbers; Duration → time intervals.  
 b. Bool → qubit states; Uint → floating point numbers; Float → register lengths; Duration → logical operations.  

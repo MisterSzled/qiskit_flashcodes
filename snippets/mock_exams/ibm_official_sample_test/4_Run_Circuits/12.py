@@ -28,7 +28,7 @@ print("Resulting Expectation Value Estimates (mock):\n", result)
 
 """
 SUMMARY:
-This demonstrates Qiskit’s array broadcasting concept as used in primitives such as Estimator:
+This demonstrates Qiskit's array broadcasting concept as used in primitives such as Estimator:
         - Parameter Value Sets (3,6) define multiple parameter sweeps.
         - Observables (2,3,1) define multiple circuits/observables over those sweeps.
         - The broadcasted result (2,3,6) shows how Qiskit pairs them dimensionally.
